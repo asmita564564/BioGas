@@ -1,0 +1,608 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biogas Prediction</title>
+</head>
+<body>
+    <h1>Biogas Prediction Form</h1>
+
+    <form id="predictionForm">
+        <label for="Date">Date:</label>
+        <input type="text" id="Date" name="Date"><br><br>
+    
+        <label for="WASTE_SMC">WASTE_SMC:</label>
+        <input type="text" id="WASTE_SMC" name="WASTE_SMC"><br><br>
+    
+        <label for="MSW_REC">MSW_REC:</label>
+        <input type="text" id="MSW_REC" name="MSW_REC"><br><br>
+    
+        <label for="DIG_FEED_B">DIG_FEED_B:</label>
+        <input type="text" id="DIG_FEED_B" name="DIG_FEED_B"><br><br>
+    
+        <label for="DIG_FEED_B_1">DIG_FEED_B_1:</label>
+        <input type="text" id="DIG_FEED_B_1" name="DIG_FEED_B_1"><br><br>
+    
+        <label for="DISPOSAL_A">DISPOSAL_A:</label>
+        <input type="text" id="DISPOSAL_A" name="DISPOSAL_A"><br><br>
+    
+        <label for="DISPOSAL_B">DISPOSAL_B:</label>
+        <input type="text" id="DISPOSAL_B" name="DISPOSAL_B"><br><br>
+    
+        <label for="DIG_PRESS">DIG_PRESS:</label>
+        <input type="text" id="DIG_PRESS" name="DIG_PRESS"><br><br>
+    
+        <label for="DIG_LEVEL">DIG_LEVEL:</label>
+        <input type="text" id="DIG_LEVEL" name="DIG_LEVEL"><br><br>
+    
+        <label for="BALLOON_A">BALLOON_A:</label>
+        <input type="text" id="BALLOON_A" name="BALLOON_A"><br><br>
+    
+        <label for="BALLOON_B">BALLOON_B:</label>
+        <input type="text" id="BALLOON_B" name="BALLOON_B"><br><br>
+    
+        <label for="ENGINE_RUNNING_HRS">ENGINE_RUNNING_HRS:</label>
+        <input type="text" id="ENGINE_RUNNING_HRS" name="ENGINE_RUNNING_HRS"><br><br>
+    
+        <label for="TOTAL_POWER_GENE">TOTAL_POWER_GENE:</label>
+        <input type="text" id="TOTAL_POWER_GENE" name="TOTAL_POWER_GENE"><br><br>
+    
+        <label for="EXPORT_POWER">EXPORT_POWER:</label>
+        <input type="text" id="EXPORT_POWER" name="EXPORT_POWER"><br><br>
+    
+        <label for="GAS_CONSUMPTION">GAS_CONSUMPTION:</label>
+        <input type="text" id="GAS_CONSUMPTION" name="GAS_CONSUMPTION"><br><br>
+    
+        <label for="SFC">SFC:</label>
+        <input type="text" id="SFC" name="SFC"><br><br>
+    
+        <label for="Raw_MSW_TS">Raw_MSW_TS:</label>
+        <input type="text" id="Raw_MSW_TS" name="Raw_MSW_TS"><br><br>
+    
+        <label for="Raw_MSW_VS">Raw_MSW_VS:</label>
+        <input type="text" id="Raw_MSW_VS" name="Raw_MSW_VS"><br><br>
+    
+        <label for="Raw_MSW_MC">Raw_MSW_MC:</label>
+        <input type="text" id="Raw_MSW_MC" name="Raw_MSW_MC"><br><br>
+    
+        <label for="AC_02_TS">AC_02_TS:</label>
+        <input type="text" id="AC_02_TS" name="AC_02_TS"><br><br>
+    
+        <label for="AC_02_VS">AC_02_VS:</label>
+        <input type="text" id="AC_02_VS" name="AC_02_VS"><br><br>
+    
+        <label for="AC_02_MC">AC_02_MC:</label>
+        <input type="text" id="AC_02_MC" name="AC_02_MC"><br><br>
+    
+        <label for="AC_02_Sand">AC_02_Sand:</label>
+        <input type="text" id="AC_02_Sand" name="AC_02_Sand"><br><br>
+    
+        <label for="AC_02_CN">AC_02_CN:</label>
+        <input type="text" id="AC_02_CN" name="AC_02_CN"><br><br>
+    
+        <label for="AC_02_COD">AC_02_COD:</label>
+        <input type="text" id="AC_02_COD" name="AC_02_COD"><br><br>
+    
+        <label for="Digester_Feed_TS">Digester_Feed_TS:</label>
+        <input type="text" id="Digester_Feed_TS" name="Digester_Feed_TS"><br><br>
+    
+        <label for="Digester_Feed_VS">Digester_Feed_VS:</label>
+        <input type="text" id="Digester_Feed_VS" name="Digester_Feed_VS"><br><br>
+    
+        <label for="Digester_Feed_MC">Digester_Feed_MC:</label>
+        <input type="text" id="Digester_Feed_MC" name="Digester_Feed_MC"><br><br>
+    
+        <label for="Digester_Feed_pH">Digester_Feed_pH:</label>
+        <input type="text" id="Digester_Feed_pH" name="Digester_Feed_pH"><br><br>
+    
+        <label for="Digester_Feed_VFA">Digester_Feed_VFA:</label>
+        <input type="text" id="Digester_Feed_VFA" name="Digester_Feed_VFA"><br><br>
+    
+        <label for="Digester_Feed_ALK">Digester_Feed_ALK:</label>
+        <input type="text" id="Digester_Feed_ALK" name="Digester_Feed_ALK"><br><br>
+    
+        <label for="Digester_Feed_VA">Digester_Feed_VA:</label>
+        <input type="text" id="Digester_Feed_VA" name="Digester_Feed_VA"><br><br>
+    
+        <label for="Digester_Feed_EC">Digester_Feed_EC:</label>
+        <input type="text" id="Digester_Feed_EC" name="Digester_Feed_EC"><br><br>
+    
+        <label for="Digester_Feed_Temp">Digester_Feed_Temp:</label>
+        <input type="text" id="Digester_Feed_Temp" name="Digester_Feed_Temp"><br><br>
+    
+        <label for="Digester_Feed_COD">Digester_Feed_COD:</label>
+        <input type="text" id="Digester_Feed_COD" name="Digester_Feed_COD"><br><br>
+    
+        <label for="Digester_Recycle_TS">Digester_Recycle_TS:</label>
+        <input type="text" id="Digester_Recycle_TS" name="Digester_Recycle_TS"><br><br>
+    
+        <label for="Digester_Recycle_VS">Digester_Recycle_VS:</label>
+        <input type="text" id="Digester_Recycle_VS" name="Digester_Recycle_VS"><br><br>
+    
+        <label for="Digester_Recycle_MC">Digester_Recycle_MC:</label>
+        <input type="text" id="Digester_Recycle_MC" name="Digester_Recycle_MC"><br><br>
+    
+        <label for="Digester_Recycle_pH">Digester_Recycle_pH:</label>
+        <input type="text" id="Digester_Recycle_pH" name="Digester_Recycle_pH"><br><br>
+    
+        <label for="Digester_Recycle_VFA">Digester_Recycle_VFA:</label>
+        <input type="text" id="Digester_Recycle_VFA" name="Digester_Recycle_VFA"><br><br>
+    
+        <label for="Digester_Recycle_ALK">Digester_Recycle_ALK:</label>
+        <input type="text" id="Digester_Recycle_ALK" name="Digester_Recycle_ALK"><br><br>
+    
+        <label for="Digester_Recycle_VA">Digester_Recycle_VA:</label>
+        <input type="text" id="Digester_Recycle_VA" name="Digester_Recycle_VA"><br><br>
+    
+        <label for="Digester_Recycle_EC">Digester_Recycle_EC:</label>
+        <input type="text" id="Digester_Recycle_EC" name="Digester_Recycle_EC"><br><br>
+    
+        <label for="Digester_Recycle_Temp">Digester_Recycle_Temp:</label>
+        <input type="text" id="Digester_Recycle_Temp" name="Digester_Recycle_Temp"><br><br>
+    
+        <label for="Digester_Recycle_TOC">Digester_Recycle_TOC:</label>
+        <input type="text" id="Digester_Recycle_TOC" name="Digester_Recycle_TOC"><br><br>
+    
+        <label for="Biogas_Digester_B_Outlet_Methane_pct">Biogas_Digester_B_Outlet_Methane_pct:</label>
+        <input type="text" id="Biogas_Digester_B_Outlet_Methane_pct" name="Biogas_Digester_B_Outlet_Methane_pct"><br><br>
+    
+        <label for="Biogas_Digester_B_Outlet_H2S_ppm">Biogas_Digester_B_Outlet_H2S_ppm:</label>
+        <input type="text" id="Biogas_Digester_B_Outlet_H2S_ppm" name="Biogas_Digester_B_Outlet_H2S_ppm"><br><br>
+    
+        <label for="Biogas_Clean_Biogas_Methane_pct">Biogas_Clean_Biogas_Methane_pct:</label>
+        <input type="text" id="Biogas_Clean_Biogas_Methane_pct" name="Biogas_Clean_Biogas_Methane_pct"><br><br>
+    
+        <label for="Biogas_Clean_Biogas_H2S_ppm">Biogas_Clean_Biogas_H2S_ppm:</label>
+        <input type="text" id="Biogas_Clean_Biogas_H2S_ppm" name="Biogas_Clean_Biogas_H2S_ppm"><br><br>
+    
+        <label for="Biogas_Dosing_pH">Biogas_Dosing_pH:</label>
+        <input type="text" id="Biogas_Dosing_pH" name="Biogas_Dosing_pH"><br><br>
+    
+        <label for="Biogas_Scrubber_pH">Biogas_Scrubber_pH:</label>
+        <input type="text" id="Biogas_Scrubber_pH" name="Biogas_Scrubber_pH"><br><br> -->
+    
+        <!-- Submit button -->
+        <!-- <button type="button" onclick="sendData()">Predict</button>
+    </form> -->
+    
+        <!-- Add additional input fields for other features as needed -->
+        <!-- Example: Add more fields here as required -->
+        
+        <!-- Submit button -->
+
+<!-- 
+    <h2>Prediction Result:</h2>
+    <p id="result"></p>
+
+    <script>
+        async function sendData() {
+            // Get form data
+            const form = document.getElementById('predictionForm');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            // Send POST request to Flask backend
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+
+                // Access predictions array and display each value individually
+                const predictions = result.prediction;
+
+                // Display individual values for Digester_Disposal_TS and other features
+                document.getElementById('result').innerHTML = `
+                    Digester_Disposal_TS: ${predictions[0]} <br>
+                    Digester_Disposal_VS: ${predictions[1]} <br>
+                    Digester_Disposal_MC: ${predictions[2]} <br>
+                    Digester_Disposal_pH: ${predictions[3]} <br>
+                    Digester_Disposal_VFA: ${predictions[4]} <br>
+                    Digester_Disposal_ALK: ${predictions[5]} <br>
+                    Digester_Disposal_VA: ${predictions[6]} <br>
+                    Digester_Disposal_EC: ${predictions[7]} <br>
+                    Digester_Disposal_Temp: ${predictions[8]} <br>
+                    Digester_Disposal_TOC: ${predictions[9]}
+                `;
+
+                // Get the prediction result
+                // const result1 = await response.json();
+                // document.getElementById('result').innerText = 'Digester_Disposal_TS: ' + result1.prediction;
+            } catch (error) {
+                document.getElementById('result').innerText = 'Error: ' + error;
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biogas Prediction Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('https://www.w3schools.com/w3images/forest.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 1200px; /* Increased width */
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .form-group div {
+            flex: 1 1 30%; /* 3 columns per line */
+            min-width: 250px; /* Ensures good fit on smaller screens */
+            box-sizing: border-box;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #BDC3C7;
+            border-radius: 4px;
+            background: #F7F9F9;
+            color: #333;
+        }
+
+        button {
+            background-color: #3498DB;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980B9;
+        }
+
+        #result {
+            background-color: #ECF0F1;
+            color: #333;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .loading {
+            color: #E74C3C;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1000px) {
+            .form-group div {
+                flex: 1 1 calc(50% - 30px); /* Two columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .form-group div {
+                flex: 1 1 100%; /* 1 column on mobile */
+            }
+
+            button {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Biogas Prediction Form</h1>
+
+    <form id="predictionForm">
+        <div class="form-group">
+            <div>
+                <label for="Date">Date:</label>
+                <input type="text" id="Date" name="Date">
+            </div>
+            <div>
+                <label for="WASTE_SMC">WASTE_SMC:</label>
+                <input type="text" id="WASTE_SMC" name="WASTE_SMC">
+            </div>
+            <div>
+                <label for="MSW_REC">MSW_REC:</label>
+                <input type="text" id="MSW_REC" name="MSW_REC">
+            </div>
+            <div>
+                <label for="DIG_FEED_B">DIG_FEED_B:</label>
+                <input type="text" id="DIG_FEED_B" name="DIG_FEED_B">
+            </div>
+            <div>
+                <label for="DIG_FEED_B_1">DIG_FEED_B_1:</label>
+                <input type="text" id="DIG_FEED_B_1" name="DIG_FEED_B_1">
+            </div>
+            <div>
+                <label for="DISPOSAL_A">DISPOSAL_A:</label>
+                <input type="text" id="DISPOSAL_A" name="DISPOSAL_A">
+            </div>
+            <div>
+                <label for="DISPOSAL_B">DISPOSAL_B:</label>
+                <input type="text" id="DISPOSAL_B" name="DISPOSAL_B">
+            </div>
+            <div>
+                <label for="DIG_PRESS">DIG_PRESS:</label>
+                <input type="text" id="DIG_PRESS" name="DIG_PRESS">
+            </div>
+            <div>
+                <label for="DIG_LEVEL">DIG_LEVEL:</label>
+                <input type="text" id="DIG_LEVEL" name="DIG_LEVEL">
+            </div>
+            <div>
+                <label for="BALLOON_A">BALLOON_A:</label>
+                <input type="text" id="BALLOON_A" name="BALLOON_A">
+            </div>
+            <div>
+                <label for="BALLOON_B">BALLOON_B:</label>
+                <input type="text" id="BALLOON_B" name="BALLOON_B">
+            </div>
+            <div>
+                <label for="ENGINE_RUNNING_HRS">ENGINE_RUNNING_HRS:</label>
+                <input type="text" id="ENGINE_RUNNING_HRS" name="ENGINE_RUNNING_HRS">
+            </div>
+            <div>
+                <label for="TOTAL_POWER_GENE">TOTAL_POWER_GENE:</label>
+                <input type="text" id="TOTAL_POWER_GENE" name="TOTAL_POWER_GENE">
+            </div>
+            <div>
+                <label for="EXPORT_POWER">EXPORT_POWER:</label>
+                <input type="text" id="EXPORT_POWER" name="EXPORT_POWER">
+            </div>
+            <div>
+                <label for="GAS_CONSUMPTION">GAS_CONSUMPTION:</label>
+                <input type="text" id="GAS_CONSUMPTION" name="GAS_CONSUMPTION">
+            </div>
+            <div>
+                <label for="SFC">SFC:</label>
+                <input type="text" id="SFC" name="SFC">
+            </div>
+            <div>   
+                <label for="Raw_MSW_TS">Raw_MSW_TS:</label>
+                <input type="text" id="Raw_MSW_TS" name="Raw_MSW_TS">
+            </div>
+            <div>    
+                <label for="Raw_MSW_VS">Raw_MSW_VS:</label>
+                <input type="text" id="Raw_MSW_VS" name="Raw_MSW_VS">
+            </div>
+            <div>    
+                <label for="Raw_MSW_MC">Raw_MSW_MC:</label>
+                <input type="text" id="Raw_MSW_MC" name="Raw_MSW_MC">
+            </div>
+            <div>    
+                <label for="AC_02_TS">AC_02_TS:</label>
+                <input type="text" id="AC_02_TS" name="AC_02_TS">
+            </div>
+            <div>    
+                <label for="AC_02_VS">AC_02_VS:</label>
+                <input type="text" id="AC_02_VS" name="AC_02_VS">
+            </div>
+            <div>    
+                <label for="AC_02_MC">AC_02_MC:</label>
+                <input type="text" id="AC_02_MC" name="AC_02_MC">
+            </div>
+            <div>    
+                <label for="AC_02_Sand">AC_02_Sand:</label>
+                <input type="text" id="AC_02_Sand" name="AC_02_Sand">
+            </div>
+            <div>    
+                <label for="AC_02_CN">AC_02_CN:</label>
+                <input type="text" id="AC_02_CN" name="AC_02_CN">
+            </div>
+            <div>    
+                <label for="AC_02_COD">AC_02_COD:</label>
+                <input type="text" id="AC_02_COD" name="AC_02_COD">
+            </div>
+            <div>    
+                <label for="Digester_Feed_TS">Digester_Feed_TS:</label>
+                <input type="text" id="Digester_Feed_TS" name="Digester_Feed_TS">
+            </div>
+            <div>    
+                <label for="Digester_Feed_VS">Digester_Feed_VS:</label>
+                <input type="text" id="Digester_Feed_VS" name="Digester_Feed_VS">
+            </div>
+            <div>    
+                <label for="Digester_Feed_MC">Digester_Feed_MC:</label>
+                <input type="text" id="Digester_Feed_MC" name="Digester_Feed_MC">
+            </div>
+            <div>    
+                <label for="Digester_Feed_pH">Digester_Feed_pH:</label>
+                <input type="text" id="Digester_Feed_pH" name="Digester_Feed_pH">
+            </div>
+            <div>    
+                <label for="Digester_Feed_VFA">Digester_Feed_VFA:</label>
+                <input type="text" id="Digester_Feed_VFA" name="Digester_Feed_VFA">
+            </div>
+            <div>    
+                <label for="Digester_Feed_ALK">Digester_Feed_ALK:</label>
+                <input type="text" id="Digester_Feed_ALK" name="Digester_Feed_ALK">
+            </div>
+            <div>    
+                <label for="Digester_Feed_VA">Digester_Feed_VA:</label>
+                <input type="text" id="Digester_Feed_VA" name="Digester_Feed_VA">
+            </div>
+            <div>    
+                <label for="Digester_Feed_EC">Digester_Feed_EC:</label>
+                <input type="text" id="Digester_Feed_EC" name="Digester_Feed_EC">
+            </div>
+            <div>    
+                <label for="Digester_Feed_Temp">Digester_Feed_Temp:</label>
+                <input type="text" id="Digester_Feed_Temp" name="Digester_Feed_Temp">
+            </div>
+            <div>    
+                <label for="Digester_Feed_COD">Digester_Feed_COD:</label>
+                <input type="text" id="Digester_Feed_COD" name="Digester_Feed_COD">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_TS">Digester_Recycle_TS:</label>
+                <input type="text" id="Digester_Recycle_TS" name="Digester_Recycle_TS">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_VS">Digester_Recycle_VS:</label>
+                <input type="text" id="Digester_Recycle_VS" name="Digester_Recycle_VS">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_MC">Digester_Recycle_MC:</label>
+                <input type="text" id="Digester_Recycle_MC" name="Digester_Recycle_MC">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_pH">Digester_Recycle_pH:</label>
+                <input type="text" id="Digester_Recycle_pH" name="Digester_Recycle_pH">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_VFA">Digester_Recycle_VFA:</label>
+                <input type="text" id="Digester_Recycle_VFA" name="Digester_Recycle_VFA">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_ALK">Digester_Recycle_ALK:</label>
+                <input type="text" id="Digester_Recycle_ALK" name="Digester_Recycle_ALK">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_VA">Digester_Recycle_VA:</label>
+                <input type="text" id="Digester_Recycle_VA" name="Digester_Recycle_VA">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_EC">Digester_Recycle_EC:</label>
+                <input type="text" id="Digester_Recycle_EC" name="Digester_Recycle_EC">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_Temp">Digester_Recycle_Temp:</label>
+                <input type="text" id="Digester_Recycle_Temp" name="Digester_Recycle_Temp">
+            </div>
+            <div>    
+                <label for="Digester_Recycle_TOC">Digester_Recycle_TOC:</label>
+                <input type="text" id="Digester_Recycle_TOC" name="Digester_Recycle_TOC">
+            </div>
+            <div>    
+                <label for="Biogas_Digester_B_Outlet_Methane_pct">Biogas_Digester_B_Outlet_Methane_pct:</label>
+                <input type="text" id="Biogas_Digester_B_Outlet_Methane_pct" name="Biogas_Digester_B_Outlet_Methane_pct">
+            </div>
+            <div>    
+                <label for="Biogas_Digester_B_Outlet_H2S_ppm">Biogas_Digester_B_Outlet_H2S_ppm:</label>
+                <input type="text" id="Biogas_Digester_B_Outlet_H2S_ppm" name="Biogas_Digester_B_Outlet_H2S_ppm">
+            </div>
+            <div>    
+                <label for="Biogas_Clean_Biogas_Methane_pct">Biogas_Clean_Biogas_Methane_pct:</label>
+                <input type="text" id="Biogas_Clean_Biogas_Methane_pct" name="Biogas_Clean_Biogas_Methane_pct">
+            </div>
+            <div>    
+                <label for="Biogas_Clean_Biogas_H2S_ppm">Biogas_Clean_Biogas_H2S_ppm:</label>
+                <input type="text" id="Biogas_Clean_Biogas_H2S_ppm" name="Biogas_Clean_Biogas_H2S_ppm">
+            </div>
+            <div>    
+                <label for="Biogas_Dosing_pH">Biogas_Dosing_pH:</label>
+                <input type="text" id="Biogas_Dosing_pH" name="Biogas_Dosing_pH">
+            </div>
+            <div>    
+                <label for="Biogas_Scrubber_pH">Biogas_Scrubber_pH:</label>
+                <input type="text" id="Biogas_Scrubber_pH" name="Biogas_Scrubber_pH">
+            </div>
+
+
+        <button type="button" onclick="sendData()">Predict</button>
+    </form>
+
+    <h2>Prediction Result:</h2>
+    <div id="result"></div>
+
+    <script>
+        async function sendData() {
+            const form = document.getElementById('predictionForm');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            document.getElementById('result').innerHTML = '<p class="loading">Loading...</p>';
+            
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const result = await response.json();
+                const predictions = result.prediction;
+
+                document.getElementById('result').innerHTML = 
+                    `<strong>Prediction Results:</strong><br>
+                    Digester_Disposal_TS: ${predictions[0]} <br>
+                    Digester_Disposal_VS: ${predictions[1]} <br>
+                    Digester_Disposal_MC: ${predictions[2]} <br>
+                    Digester_Disposal_pH: ${predictions[3]} <br>
+                    Digester_Disposal_VFA: ${predictions[4]} <br>
+                    Digester_Disposal_ALK: ${predictions[5]} <br>
+                    Digester_Disposal_VA: ${predictions[6]} <br>
+                    Digester_Disposal_EC: ${predictions[7]} <br>
+                    Digester_Disposal_Temp: ${predictions[8]} <br>
+                    Digester_Disposal_TOC: ${predictions[9]}
+                `;
+            } catch (error) {
+                document.getElementById('result').innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
